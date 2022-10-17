@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "myFont";
+  src: url("RobotoMono-VariableFont_wght.ttf");
+}
+
+* {
+  font-family: "myFont";
+}
+
+h3[class="date"] {
+    text-decoration:underline
+}
+
+h2, h3, h4 {
+    color: darkcyan;
+}
+
+body {
+  /* add background color for my page */
+  background-color: bisque;
+  padding-top: 60px;
+}
+
+strong + b {
+    color: red;
+}
+
+strong ~ b {
+    background-color: pink;
+}
+
+h1 {
+  /* h1 text color blue */
+  color: rgb(00, 00, 255);
+  /* underline h1 text */
+  text-decoration: underline;
+  /* center text */
+  text-align: center;
+}
+
+.date {
+  margin: 10px 100px 10px 100px;
+  border: solid 3px;
+  border-color: black;
+  text-align: center;
+  position: static;
+}
+
+#call-to-order {
+  /* background white */
+  background-color: #ffffff;
+  /* solid green border */
+  border: 5pt solid hsl(120, 100%, 25%);
+  /* border style */
+  border-style: double;
+  /* relative units */
+  border-radius: 1em;
+  /* relative units */
+  max-width: 100%;
+  height: auto;
+  /* absolute units */
+  padding: 1pc;
+  /* absolute units */
+  margin-top: 5mm;
+  margin-bottom: 5mm;
+  margin-right: 5mm;
+  margin-left: 5mm;
+  /* relative units */
+  font-size: 3ex;
+  /* set border width */
+  border-width: 1vw;
+  display: block;
+}
+
+ul.navbar {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 0 0;
+  background-color: darkgreen;
+}
+
+@media screen and (max-width: 900px) {
+  ul.navbar {
+    width: 70%;
+  }
+}
+
+li.navbar {
+  float: left;
+  border-right: 1px solid white;
+}
+
+li.navbar a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
+li.navbar a:hover {
+  background-color: lightgreen;
+  color: blue;
+}
+
+.announcements-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.announcements-item {
+  background: darkred;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  flex-flow: row wrap;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.attendance-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-flow: row wrap;
+}
+
+.attendance-item {
+  background: darkblue;
+  padding: 10px;
+  min-width: 25%;
+  height: 100px;
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+li li {
+    list-style-type: disc;
+}
+
+.old_bus_container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 50%;
+  gap: 20px;
+  background-color: orange;
+  padding: 10px;
+}
+
+.old_bus_container > div {
+  background-color: yellow;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.new_bus_container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 80%;
+  gap: 10px;
+  background-color: red;
+  padding: 10px;
+}
+
+.new_bus_container > div {
+  background-color: pink;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.agenda {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 60%;
+  gap: 10px;
+  background-color: darkgrey;
+  padding: 10px;
+}
+
+.agenda > details {
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.sub {
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(45deg, blue, red);
+  border: solid purple;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.sub:active {
+  box-shadow: 4px 4px 10px black;
+}
