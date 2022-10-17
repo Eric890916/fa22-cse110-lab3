@@ -4,32 +4,33 @@
     <title>Meeting Minutes</title>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <h1>CSE110 Team 24 Meeting Minutes</h1>
-      <h3><em>2022/10/09</em></h3>
+      <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CSE110 Team 24 Meeting Minutes</h1>
+      <h3 class="date"><em>2022/10/09</em></h3>
       <br />
-      <nav>
-        <ol>
-          <li><a href="#call_to_order">Call to Order</a></li>
-          <li><a href="#attendance_list">Attendance List</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#old_business">Old Business</a></li>
-          <li><a href="#new_business">New Business</a></li>
-          <li><a href="#announcements">Announcements</a></li>
-          <li><a href="#pictures">Pictures</a></li>
-          <li><a href="#video/audio">Video/Audio</a></li>
-        </ol>
+      <nav class="navbar">
+        <ul class="navbar">
+          <li class="navbar"><a href="#call_to_order">Call to Order</a></li>
+          <li class="navbar"><a href="#attendance_list">Attendance List</a></li>
+          <li class="navbar"><a href="#agenda">Agenda</a></li>
+          <li class="navbar"><a href="#old_business">Old Business</a></li>
+          <li class="navbar"><a href="#new_business">New Business</a></li>
+          <li class="navbar"><a href="#announcements">Announcements</a></li>
+          <li class="navbar"><a href="#pictures">Pictures</a></li>
+          <li class="navbar"><a href="#video/audio">Video/Audio</a></li>
+        </ul>
       </nav>
       <hr />
     </header>
 
     <main>
       <section>
-        <h2 id="call_to_order">Call to Order</h2>
-        <p>
+        <h2>Call to Order</h2>
+        <p id="call-to-order">
           A meeting of CSE110 Team 24 was held on <strong>2022/10/09</strong> at
           UCSD. It was presided over by our team leader <b>Jessalyn</b>.
         </p>
@@ -37,24 +38,38 @@
       <hr />
       <section>
         <h2 id="attendance_list">Attendance List</h2>
-        <div class="name_list">
-          <ul>
-            <li><span class="TA">Navya</span></li>
-            <li>Eric Ko</li>
-            <li>Charles-Pierre Beurtheret</li>
-            <li>Hayk Khulyan</li>
-            <li>Isabelle Krochmal</li>
-            <li>Jessalyn Wang</li>
-            <li>Lemin Kin</li>
-            <li>Qingxin Li</li>
-            <li>Sri Gangavarapu</li>
-            <li>Alex Meng</li>
+        <div class="name_list" id="name_list">
+          <ul class="attendance-container">
+            <li class="attendance-item"><span class="TA">Navya</span>
+              <ul>
+                <li>TA</li>
+              </ul>
+            </li>
+            <li class="attendance-item">Eric Ko</li>
+            <li class="attendance-item">Charles-Pierre Beurtheret</li>
+            <li class="attendance-item">Hayk Khulyan</li>
+            <li class="attendance-item">Isabelle Krochmal</li>
+            <li class="attendance-item">Jessalyn Wang
+              <ul>
+                <li>Team Lead</li>
+              </ul>
+            </li>
+            <li class="attendance-item">Lemin Kin</li>
+            <li class="attendance-item">Qingxin Li</li>
+            <li class="attendance-item">Sri Gangavarapu</li>
+            <li class="attendance-item">Alex Meng
+              <ul>
+                <li>Team Lead</li>
+              </ul>
+            </li>
+
           </ul>
         </div>
       </section>
       <hr />
       <section>
-        <h2 id="agenda">Agenda</h2>
+        <h2>Agenda</h2>
+        <div class="agenda" id="agenda">
         <details>
           <summary><b>Background</b></summary>
           <i>overview/summary of the project</i>
@@ -79,34 +94,38 @@
           <summary><b>Questions</b></summary>
           <i>clarify misunderstandings</i>
         </details>
+      </div>
       </section>
       <hr />
       <section>
         <h2 id="old_business">Old Business</h2>
-        <ul>
-          <li>Decided the topic of the project</li>
-          <li>Went over the project summary and its mission statement</li>
-        </ul>
+        <div class="old_bus_container">
+          <div>Decided the topic of the project</div>
+          <div>Went over the project summary and its mission statement</div>
+          <div>Decided our team name</div>
+          <div>Designed our team logo</div>
+        </div>
       </section>
       <hr />
       <section>
         <h2 id="new_business">New Business</h2>
-        <ul>
-          <li>Created the timeline for your project throughout the quarter</li>
-          <li>Assigned roles based on everyone's preference</li>
-        </ul>
+        <div class="new_bus_container">
+          <div>Created the timeline for your project throughout the quarter</div>
+          <div>Assigned roles based on everyone's preference</div>
+          <div>Work on team contract</div>
+        </div>
       </section>
       <hr />
       <section>
         <h2 id="announcements">Announcements</h2>
-        <ul>
-          <li>
+        <ul class="announcements-container">
+          <li class="announcements-item">
             Please remember to vote on the date and time for our next meeting
             <a href="https://www.when2meet.com/?17177306-9IyAm">(when2meet)</a>.
-          </li>
-          <li>Make sure to do the daily report to update your progress.</li>
-          <li>follow the timeline!</li>
-          <li>remember to record an introduction video of yourself.</li>
+          </li class="announcements-item">
+          <li class="announcements-item">Make sure to do the daily report to update your progress.</li>
+          <li class="announcements-item">follow the timeline!</li>
+          <li class="announcements-item">remember to record an introduction video of yourself.</li>
         </ul>
       </section>
       <hr />
